@@ -5,16 +5,16 @@ using namespace std;
 
 int main ()
 {
-  int x,k,i,a,ans=0;
+  int x,k,i,a[10000],ans=0;
 cin>>x>>k;
-int n[x];
+//robiul
 for (i=0;i<x;i++)
-    cin>>n[i];
-    k =k-1;
-    for (i=0;i<x;i++)
-    if (n[i]>=n[k] && n[k]>0)
-    ans++;
+    cin>>a[i];
     
+    for (i=0;i<x;i++){
+    if (a[i]>=a[k-1] && a[i]>0)
+    ans++;
+    }
     cout <<ans<<endl;
 
     return 0;
