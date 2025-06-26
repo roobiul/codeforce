@@ -7,7 +7,7 @@ int main ()
 {
   int x,k,i,a[10000],ans=0;
 cin>>x>>k;
-//robiul
+//int n[x];
 for (i=0;i<x;i++)
     cin>>a[i];
     
